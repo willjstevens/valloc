@@ -1,0 +1,269 @@
+
+/*
+ * OVERRIDDEN BOOTSTRAP STYLES
+ */
+body {
+    color: #333;
+    font-family: "Helvetica Neue", "Helvetica", "Tahoma", "Arial", "Verdana", "sans-serif";
+    font-size: 13px;
+    line-height: 1.42857;
+    /*background-color: #f5f5f5;*/
+}
+
+.navbar-static-top {
+    margin-bottom: 40px;
+    background: #daeeea;
+    border-bottom: 1px solid #c7c7c7;
+}
+
+.home-page-logo {
+    max-height: 32px;
+    width: auto;
+}
+
+.submit-panel {
+    margin-top: 15px;
+}
+
+footer {
+    margin: 20px 0 20px 0;
+}
+
+.errorSection {
+    border: solid 1px #ff0000;
+    background-color: #ffe4e1;
+    border-radius: 4px;
+    font-size: 12px;
+    padding: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    color: #333;
+}
+.highlighted-background {
+    background-color: #fffda7;
+}
+.copyright {
+    font-size: 11px;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.top-nav-center {
+    margin-top: 15px;
+    position: absolute;
+    left: -40px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+
+.left-margin-spacer {
+    margin-left: 20px;
+}
+
+.top-cushion-20 {
+    margin-top: 20px;
+}
+
+.img-vertical-align-center {
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+}
+.img-vertical-align-center * {
+    vertical-align: middle;
+}
+.img-vertical-align-center span {
+    display: inline-block;
+    height: 100%;
+    width: 1px;
+}
+
+/*
+ * Individual page styles
+ */
+.feedback-containerBox {
+    max-width: 600px;
+    margin: 0 auto;
+}
+.feedback-saveBtn {
+    margin-right: 20px;
+}
+.pinLink-containerBox {
+    max-width: 700px;
+    margin: 0 auto;
+}
+.pinLink-title {
+    margin-bottom: 35px;
+}
+.pinLink-pinPadding {
+    margin-right: 30px;
+}
+.pinLink-noteBox {
+    width: 100%;
+}
+.theme-text {
+    color: #1bbd9b;
+}
+.btn-theme {
+    color: #ffffff;
+    background-color: #159076;
+    border-radius: 2px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+.btn-theme:hover,
+.btn-theme:focus {
+    color: #ffffff;
+    text-decoration: none;
+}
+.btn-theme:focus {
+    outline: thin dotted #333;
+    outline: 5px auto -webkit-focus-ring-color;
+    outline-offset: -2px;
+}
+.right-cushion-10 {
+    margin-right: 10px;
+}
+
+.dropdown-new {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #ccc;
+    min-width: 300px;
+    box-shadow: 0px 4px 8px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    padding: 10px;
+    overflow: auto;
+    border-radius: 3px;
+    opacity: 0.95;
+}
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown-new:hover .dropdown-content {
+    display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown-new:hover .dropdown-toggle {
+    background-color: #3e8e41;
+}
+
+.linknote {
+    clear: both;
+}
+.linknote-header-name {
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 12px;
+    font-weight: bold;
+    color: #222;
+}
+.linknote-header-postTimestamp {
+    margin-right: 10px;
+    font-size: 11px;
+    color: #555;
+}
+.linknote-body {
+    clear: right;
+}
+.linknote-header-right {
+    float: right;
+    clear: left;
+}
+.linknote-header-left {
+    float: left;
+    clear: right;
+}
+.linknote-footer {
+    color: #a9a9a9;
+    font-size: 11px;
+}
+
+.bubble{
+    background-color: #F2F2F2;
+    border-radius: 2px;
+    box-shadow: 0 0 3px #B2B2B2;
+    display: inline-block;
+    padding: 10px 18px;
+    position: relative;
+    vertical-align: top;
+    opacity: 1;
+}
+
+.bubble::before {
+    background-color: #F2F2F2;
+    content: "\00a0";
+    display: block;
+    height: 16px;
+    position: absolute;
+    top: 11px;
+    transform:             rotate( 29deg ) skew( -35deg );
+    -moz-transform:    rotate( 29deg ) skew( -35deg );
+    -ms-transform:     rotate( 29deg ) skew( -35deg );
+    -o-transform:      rotate( 29deg ) skew( -35deg );
+    -webkit-transform: rotate( 29deg ) skew( -35deg );
+    width:  20px;
+}
+
+.me {
+    float: left;
+    margin: 5px 45px 5px 20px;
+}
+
+.me::before {
+    box-shadow: -2px 2px 2px 0 rgba( 178, 178, 178, .4 );
+    left: -9px;
+}
+
+.you {
+    float: right;
+    margin: 5px 20px 5px 45px;
+}
+
+.you::before {
+    box-shadow: 2px -2px 2px 0 rgba( 178, 178, 178, .4 );
+    right: -9px;
+}
+.cushion-10 {
+     margin: 10px;
+ }
+.cushion-10-top {
+    margin-top: 10px;
+}
+.cushion-10-bottom {
+    margin-bottom: 10px;
+}
+.cushion-10-right {
+    margin-right: 10px;
+}
+.cushion-10-left {
+    margin-left: 10px;
+}
+.cushion-20 {
+    margin: 20px;
+}
+.cushion-20-top {
+    margin-top: 20px;
+}
+.cushion-20-bottom {
+    margin-bottom: 20px;
+}
+.cushion-20-right {
+    margin-right: 20px;
+}
+.cushion-20-left {
+    margin-left: 20px;
+}

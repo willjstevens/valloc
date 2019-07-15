@@ -1,0 +1,283 @@
+
+
+body {
+    color: #333;
+    font-family: "Helvetica Neue", "Helvetica", "Tahoma", "Arial", "Verdana", "sans-serif";
+    font-size: 13px;
+    line-height: 1.42857;
+    /*background-color: #f5f5f5;*/
+}
+
+    .alert {
+        margin-bottom: 10px;
+    }
+    .repair-input {
+        width: 100%;
+        padding: 5px !important;
+    }
+    .center {
+        float: none;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .home-label {
+        margin-bottom: 15px;
+    }
+    .visibility-block {
+        margin-top: 10px;
+    }
+    .save-btn {
+        /*float: right;*/
+        /*margin-right: 50px;*/
+
+        color: #ffffff;
+        background-color: #159076;
+        border-radius: 4px;
+        padding: 10px 15px;
+        margin: 10px 5px;
+        text-decoration: none;
+    }
+    .save-btn:hover,
+    .save-btn:focus {
+        color: #ffffff;
+        text-decoration: none;
+    }
+    .save-btn:focus {
+        outline: thin dotted #333;
+        outline: 5px auto -webkit-focus-ring-color;
+        outline-offset: -2px;
+    }
+
+    .visibilityRadios {
+        margin-left: 15px;
+    }
+    .pageGuestsBtn {
+        padding: 0px;
+    }
+    .toolTip {
+        opacity: .5;
+    }
+    .link-decorator-icon {
+        float: right;
+        margin-right: 5px;
+        opacity: .4;
+    }
+    .deleteIcon {
+        float: right;
+    }
+    .sectionDeleteIcon {
+        margin-right: 20px;
+        position: relative;
+    }
+    .errorSection {
+        border: solid 1px #ff0000;
+        background-color: #ffe4e1;
+        border-radius: 4px;
+        font-size: 12px;
+        padding: 10px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 20px;
+        color: #333;
+    }
+    .pageGuestCloseBtn {
+        float: right;
+    }
+    .pageGuestGridHeader {
+        padding: 5px;
+        background-color: #ededed;
+        border: 1px solid #828282;
+        border-radius: 3px;
+    }
+
+    .pageGuestGridColumnUsername,
+    .pageGuestGridColumnFirstName,
+    .pageGuestGridColumnLastName {
+        display: inline-block;
+        width: 125px;
+    }
+
+    .pageGuestGridColumnCanModify {
+        display: inline-block;
+        width: 75px;
+    }
+
+    .pageGuestGridColumnCanModifyCell {
+        text-align: center;
+    }
+    input[type="checkbox"].pageGuestGridColumnCanModify {
+        margin: 0px;
+    }
+    .pageGuestGridColumnDelete {
+        display: inline-block;
+        width: 50px;
+    }
+    .pageGuestGridColumnDeleteHeader {
+        text-align: center;
+    }
+    button.pageGuestGridColumnDelete {
+        float: none;
+    }
+    .pageGuestGridLeftPadding {
+        /*padding-left: 5px;*/
+    }
+    .pageGuestGrid {
+        padding: 5px;
+        overflow: auto;
+        height: 100px;
+    }
+    .pageGuestForm {
+        margin-bottom: 0px;
+    }
+    .pageGuestsAddGuestBtn {
+        margin-left: 20px;
+    }
+
+    /*
+     * OVERRIDDEN BOOTSTRAP STYLES
+     */
+    body {
+        padding-top: 60px;
+        padding-bottom: 40px;
+    }
+    a {
+        cursor: pointer;
+    }
+    .modal { /* for page guest */
+        width: 580px;
+    }
+    .sidebar-nav {
+        padding: 10px;
+    }
+    div.page-header {
+        margin-bottom: 20px;
+    }
+    .popover {
+        max-width: 500px;
+    }
+    .alert-success {
+        background-color: #e9fbe8;
+        border-color: #00CC66;
+        color: #333;
+        font-size: 14px;
+    }
+
+    /*input style below used for horizontal alignment on forms*/
+    /*input {*/
+    /*max-width: 100%;*/
+    /*width: 100%;*/
+    /*}*/
+
+    @media (max-width: 980px) {
+        /* Enable use of floated navbar text */
+        .navbar-text.pull-right {
+            float: none;
+            padding-left: 5px;
+            padding-right: 5px;
+        }
+    }
+
+    @media (max-width: 979px) {
+        .navbar-fixed-top,
+        .navbar-fixed-bottom {
+            position: fixed;
+        }
+    }
+
+
+    /*
+     * DROP-IN STYLES FROM JFIDDLE FOR COLUMN/SECTION/LINK LIST ITEMS
+     */
+
+    ul {
+        margin: 0px;
+        padding: 0px;
+    }
+
+    li {
+        list-style-type: none;
+    }
+
+    ul.columnList {
+        /*height: 35px;*/
+    }
+
+    ul.columnList .columnTitle {
+        margin: 15px 0 15px 0;
+        text-align: center;
+    }
+
+    .columnListItem {
+        float: left;
+        padding: 7px;
+        border: 1px solid #d6d6d6;
+        border-radius: 2px;
+        margin-right: 15px;
+        min-height: 150px;
+        min-width: 200px;
+        background: #f2f2f2;
+    }
+
+    .sectionTitle {
+        font-size: 12px;
+        text-align: center;
+        margin: 10px 0 10px 0;
+        text-transform: uppercase;
+    }
+
+    ul.sectionList {
+        min-height: 35px;
+    }
+
+    .sectionListItem {
+        border: 1px solid #d6d6d6;
+        border-radius: 1px;
+        padding: 0 0 10px 0;
+        margin-bottom: 10px;
+        min-height: 25px;
+        background: #daeeea;
+    }
+
+    ul.linkList {
+        padding: 0px;  /* remove list item indent */
+        min-height: 25px;
+    }
+
+    ul.linkList li.linkItem {
+        border: 1px solid #d2d2d2;
+        border-radius: 1px;
+        font-size: 12px;
+        color: #3d3d3d;
+        background-color: #eee;
+        padding: 8px;
+        margin: 5px 8px 5px 8px;
+    }
+
+    .linkContent {
+        max-width: 25px;
+        text-overflow: ellipsis;
+    }
+
+
+
+    /*
+     * OVERRIDES
+     */
+/* Desktops */
+@media only screen
+and (min-width : 1224px) {
+    .columnListItem {
+        width: 300px;
+    }
+}
+/* tablets */
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px) {
+    .columnListItem {
+        width: 200px;
+    }
+}
+
+
+

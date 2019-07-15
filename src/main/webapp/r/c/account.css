@@ -1,0 +1,19 @@
+
+
+/*
+     * OVERRIDDEN BOOTSTRAP STYLES
+     */
+
+label {
+    display: block;
+}
+
+div.well h2 {
+    padding-bottom: 30px;
+}
+
+.accountBox {
+    max-width: 600px;
+    margin: 0 auto;
+}
+

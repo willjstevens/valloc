@@ -1,0 +1,27 @@
+
+
+/*
+ * OVERRIDDEN BOOTSTRAP STYLES
+ */
+/*body {*/
+    /*padding-top: 100px;*/
+    /*padding-bottom: 40px;*/
+/*}*/
+
+div.well h2 {
+    padding-bottom: 15px;
+}
+
+.loginBox {
+    max-width: 340px;
+    margin: 0 auto;
+}
+
+.signup-box {
+    max-width: 600px;
+    margin-top: 20px;
+}
+
+label {
+    display: block;
+}

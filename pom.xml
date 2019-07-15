@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0
+                      http://maven.apache.org/xsd/maven-4.0.0.xsd">
+                      
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>com.valloc</groupId>
+	<artifactId>valloc</artifactId>
+	<packaging>war</packaging>
+	<version>2.0</version>
+	
+	<properties>
+		<!--<org.springframework.version>3.2.0.RELEASE</org.springframework.version>-->
+        <org.springframework.version>4.0.3.RELEASE</org.springframework.version>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<org.hibernate.version>4.3.4.Final</org.hibernate.version>
+		<!--<org.postgres.version>9.4.1207</org.postgres.version>-->
+		<org.postgres.version>42.2.1</org.postgres.version>
+
+		<!--<org.codehaus.jackson.version>1.9.8</org.codehaus.jackson.version>-->
+        <!--<org.codehaus.jackson.version>2.2.3</org.codehaus.jackson.version>-->
+	</properties>
+
+	<repositories>
+		<repository>
+			<id>central</id>
+			<url>http://repo1.maven.org/maven2</url>
+		</repository>
+		<repository>
+			<id>jboss-repo</id>
+			<url>https://repository.jboss.org/nexus/content/groups/public</url>
+		</repository>
+		<repository>
+			<id>springsource-repo</id>
+			<name>SpringSource Repository</name>
+			<url>http://repo.springsource.org/release</url>
+		</repository>
+		<repository>
+			<id>java.net-Public</id>
+			<name>Repository hosting the jee6 artifacts</name>
+			<url>https://maven.java.net/content/groups/public/</url>
+		</repository>
+	</repositories>
+  
+	<dependencies>
+        <dependency>
+            <groupId>javax.servlet</groupId>
+            <artifactId>javax.servlet-api</artifactId>
+            <version>3.0.1</version>
+            <scope>provided</scope>
+        </dependency>
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-webmvc</artifactId>
+			<version>${org.springframework.version}</version>
+		</dependency>
+		<dependency>
+	  		<groupId>org.springframework</groupId>
+	  		<artifactId>spring-tx</artifactId>
+	  		<version>${org.springframework.version}</version>
+	  	</dependency>  	
+	  	<dependency>
+	  		<groupId>org.hibernate</groupId>
+	  		<artifactId>hibernate-core</artifactId>
+	  		<version>${org.hibernate.version}</version>
+	  	</dependency>
+		<dependency>
+			<groupId>org.postgresql</groupId>
+			<artifactId>postgresql</artifactId>
+			<version>${org.postgres.version}</version>
+		</dependency>
+        <dependency>
+            <groupId>com.fasterxml.jackson.core</groupId>
+            <artifactId>jackson-databind</artifactId>
+            <version>2.2.3</version>
+        </dependency>
+
+        <dependency>
+	  		<groupId>javax.servlet.jsp.jstl</groupId>
+	  		<artifactId>javax.servlet.jsp.jstl-api</artifactId>
+	  		<version>1.2.1</version>
+	  	</dependency>
+  	  	<dependency>
+	  		<groupId>org.glassfish.web</groupId>
+	  		<artifactId>jstl-impl</artifactId>
+	  		<version>1.2</version>
+	  		<exclusions>
+	  			<exclusion>
+	  				<artifactId>servlet-api</artifactId>
+	  				<groupId>javax.servlet</groupId>
+	  			</exclusion>
+	  		</exclusions>
+  		</dependency>
+	  	<dependency>
+	  		<groupId>commons-dbcp</groupId>
+	  		<artifactId>commons-dbcp</artifactId>
+	  		<version>1.4</version>
+	  	</dependency>
+	  	<dependency>
+	  		<groupId>cglib</groupId>
+	  		<artifactId>cglib</artifactId>
+	  		<version>2.2.2</version>
+	  	</dependency>
+	  	<dependency>
+	  		<groupId>junit</groupId>
+	  		<artifactId>junit</artifactId>
+	  		<version>4.10</version>
+	  	</dependency>
+	  	<dependency>
+	  		<groupId>org.springframework</groupId>
+	  		<artifactId>spring-test</artifactId>
+	  		<version>${org.springframework.version}</version>
+	  	</dependency>
+		<dependency>
+			<groupId>javax.mail</groupId>
+			<artifactId>mail</artifactId>
+			<version>1.4</version>
+		</dependency>
+		<dependency>
+		    <groupId>javax.activation</groupId>
+		    <artifactId>activation</artifactId>
+		    <version>1.1.1</version>
+		</dependency>
+        <dependency>
+            <groupId>org.jsoup</groupId>
+            <artifactId>jsoup</artifactId>
+            <version>1.7.2</version>
+        </dependency>
+
+		
+		<!-- These might not be necessary -->
+		
+		<dependency>
+	  		<groupId>org.springframework</groupId>
+	  		<artifactId>spring-jdbc</artifactId>
+	  		<version>${org.springframework.version}</version>
+	  	</dependency>
+		<dependency>
+	  		<groupId>org.springframework</groupId>
+	  		<artifactId>spring-orm</artifactId>
+	  		<version>${org.springframework.version}</version>
+	  	</dependency>
+		<dependency>
+	  		<groupId>org.hsqldb</groupId>
+	  		<artifactId>hsqldb</artifactId>
+	  		<version>2.2.8</version>
+	  	</dependency>
+		<dependency>
+	  		<groupId>org.hibernate</groupId>
+	  		<artifactId>hibernate-entitymanager</artifactId>
+	  		<version>${org.hibernate.version}</version>
+	  	</dependency>
+	  	<dependency>
+			<groupId>org.apache.maven.plugins</groupId>
+			<artifactId>maven-compiler-plugin</artifactId>
+			<version>2.5.1</version>
+		</dependency>
+		<dependency>
+			<groupId>org.slf4j</groupId>
+			<artifactId>slf4j-api</artifactId>
+			<version>1.6.6</version>
+		</dependency>
+        <dependency>
+            <groupId>de.danielbechler</groupId>
+            <artifactId>java-object-diff</artifactId>
+            <version>0.13.1</version>
+        </dependency>
+	</dependencies>
+
+	<build>
+		<plugins>
+			<plugin>
+	            <groupId>org.apache.maven.plugins</groupId>
+	            <artifactId>maven-dependency-plugin</artifactId>
+	            <version>2.7</version>
+	            <executions>
+	                <execution>
+	                    <phase>package</phase>
+	                    <goals><goal>copy</goal></goals>
+	                    <configuration>
+	                        <artifactItems>
+	                            <artifactItem>
+	                                <groupId>com.github.jsimone</groupId>
+	                                <artifactId>webapp-runner</artifactId>
+	                                <version>8.5.11.3</version>
+	                                <destFileName>webapp-runner.jar</destFileName>
+	                            </artifactItem>
+	                        </artifactItems>
+	                    </configuration>
+	                </execution>
+	            </executions>
+	        </plugin>
+
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+    			<artifactId>maven-compiler-plugin</artifactId>
+    			<configuration>
+	     			<source>9</source>
+	     			<target>9</target>
+    			</configuration>
+   			</plugin>
+   
+		</plugins>
+	</build>
+	
+	
+</project>
+
+

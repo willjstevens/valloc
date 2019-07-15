@@ -1,0 +1,5 @@
+http://www.valloc.com
+http://www.valloc.com/howitworks
+https://www.valloc.com/account/create
+https://www.valloc.com/login
+https://www.valloc.com/dashboard

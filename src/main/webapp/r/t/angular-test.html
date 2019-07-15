@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<title>angular-test.html</title>
+	
+	
+    <script src="/r/j/angular.js" type="text/javascript"></script>
+<script type="text/javascript">
+
+angular.module('xmpl', ['xmpl.ctest']).
+  run(function($location) {
+
+    var path = $location.path();
+    console.log(path);
+  });
+
+angular.module('xmpl.ctest', []).
+  config(function($locationProvider) {
+     $locationProvider.html5Mode(true);
+  });
+ 
+// A Controller for your app
+var XmplController = function($scope, $location) {
+    console.log('*** demo location path = ' + $location.path());
+}
+
+</script>
+</head>
+<body>
+
+<div ng-app="xmpl">
+  <div ng-controller="XmplController">
+      {{ greeting }}!
+  </div>    
+</div>
+
+<noscript>
+Please turn on JavaScript to use Valloc.com
+</noscript>
+</body>
+</html>

@@ -1,0 +1,26 @@
+
+
+/*
+ * OVERRIDDEN BOOTSTRAP STYLES
+ */
+/*body {*/
+    /*padding-top: 100px;*/
+    /*padding-bottom: 40px;*/
+/*}*/
+.navbar-static-top {
+    margin-bottom: 0px;
+}
+div.well h2 {
+    padding-bottom: 15px;
+}
+input[type="file"] {
+    display: inline;
+}
+.quickStartBox {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.browserComponent {
+    font-weight: bold;
+}

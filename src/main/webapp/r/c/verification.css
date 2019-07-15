@@ -1,0 +1,17 @@
+
+
+
+
+/*
+ * OVERRIDDEN BOOTSTRAP STYLES
+ */
+
+div.well h3 {
+    padding-bottom: 15px;
+}
+
+.verificationBox {
+    max-width: 700px;
+    margin: 0 auto;
+}
+

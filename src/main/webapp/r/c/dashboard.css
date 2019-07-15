@@ -1,0 +1,108 @@
+
+
+/*
+ * OVERRIDDEN BOOTSTRAP STYLES
+ */
+
+.radio {
+    margin: 3px 0 3px 0;
+}
+div.well h3 {
+    padding-bottom: 15px;
+}
+.dashboardBox {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+
+/*
+ * Page listing styles
+ */
+.page-dashboard-title {
+    font-family: "Helvetica Neue", "Helvetica";
+    font-weight: 200;
+}
+
+ul.dashboard {
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 4px;
+    padding: 0px 8px 0px 4px;
+}
+
+ul.dashboard li {
+    list-style-type: none;
+    padding: 15px;
+    margin: 10px 0px 20px 0px;
+    border: 1px solid #aaa;
+    border-radius: 2px;
+    /*box-shadow: 3px 1px 0px #aaa;*/
+    background: #daeeea;
+}
+
+.li-row {
+    margin-top: 10px;
+}
+
+.page-name {
+    font-size: 20px;
+    margin: 15px 0 0 5px;
+    text-transform: uppercase;
+}
+
+.page-path {
+    font-size: 12px;
+    margin: 15px 0 0 25px;
+}
+
+ul.dashboard li a {
+    color: #464343;
+}
+
+li.content div {
+    border: 0px solid black;
+    opacity: .9;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+li.content div.left {
+    float: left;
+    width: 400px;
+}
+
+li.content div.right {
+    float: right;
+    width: 200px;
+    text-align: right;
+    vertical-align: middle;
+}
+div.right input[type=radio] {
+    font-size: 14px;
+    vertical-align: top;
+}
+li.content div.bottom {
+    clear: both;
+    font-size: 14px;
+    text-align: center;
+}
+span.hint {
+    font-size: 12px;
+}
+.glyphicon-edit-page {
+    font-size: 20px;
+}
+.glyphicon-home {
+    margin: 0 0 5px 15px;
+    font-size: 12px;
+}
+
+.no-pages-box {
+    margin-top: 20px;
+}
+
+.icon {
+    color: #1bbd9b;
+}

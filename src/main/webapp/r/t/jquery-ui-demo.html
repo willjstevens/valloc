@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<title>validate-page.html</title>
+	
+	
+	<!-- 
+	<link rel="stylesheet" href="/r/c/themes/base/jquery.ui.all.css">
+	<link rel="stylesheet" href="/r/c/demos/demos.css">
+
+	<link href="/r/jqueryui/css/cupertino/jquery-ui-1.10.0.custom.css" rel="stylesheet" />
+	<script src="/r/jqueryui/js/jquery-ui-1.10.0.custom.js" type="text/javascript"></script>
+	 -->
+	
+	<script src="/r/j/jquery-1.8.3.js" type="text/javascript"></script>
+    <script src="/r/jqueryui/js/jquery-ui-1.10.1.custom.js" type="text/javascript"></script>
+    <link href="/r/jqueryui/css/south-street/jquery-ui-1.10.1.custom.css" rel="stylesheet" />
+    	
+	<!-- 
+	<script src="/r/j/valloc.js" type="text/javascript"></script>
+	<script src="/r/j/valloc-domain.js" type="text/javascript"></script>
+	<script src="/r/j/valloc-library.js" type="text/javascript"></script>
+	<script src="/r/j/valloc-database.js" type="text/javascript"></script>
+	<script src="/r/j/valloc-service.js" type="text/javascript"></script>
+	 -->
+	
+<script type="text/javascript">
+	$(document).ready(function() {
+		/*
+		if (!com.valloc.isValidBrowser) {
+			document.write('Invalid browser.');
+			return;
+		}
+		*/
+
+		$("#dlg_hello").dialog( { autoOpen: false });
+		
+		$("#btn_hello").button().click(function(){ 
+			 $("#dlg_hello").dialog("open"); 
+		}); 
+		
+		
+		$( "#dialog-modal" ).dialog({
+			height: 140,
+			modal: true
+		});
+		
+	});
+</script>
+</head>
+<body style="font-size: 10px;">
+
+<!-- Button Demo -->
+<button id="btn_hello">Say Hello</button> 
+<div id="dlg_hello">Hello World!</div>
+
+<!-- Modal Dialog Demo -->
+<div id="dialog-modal" title="Basic modal dialog">
+	<p>Adding the modal overlay screen makes the dialog look more prominent because it dims out the page content.</p>
+</div>
+
+<noscript>
+Please turn on JavaScript to use Valloc.com
+</noscript>
+</body>
+</html>

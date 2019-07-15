@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<title>validate-page.html</title>
+	<script src="/r/j/jquery-1.8.3.js" type="text/javascript"></script>
+	<script src="/r/j/vlc.js" type="text/javascript"></script>
+	<script src="/r/j/vlc-domain.js" type="text/javascript"></script>
+	<script src="/r/j/vlc-library.js" type="text/javascript"></script>
+	<script src="/r/j/vlc-database.js" type="text/javascript"></script>
+	<script src="/r/j/vlc-service.js" type="text/javascript"></script>
+	
+<script type="text/javascript">
+	$(document).ready(function() {
+		if (!com.valloc.isValidBrowser) {
+			document.write('Invalid browser.');
+			return;
+		}
+		
+		var applicationService = new com.valloc.service.ApplicationService();
+		applicationService.loadAppData();
+	});
+</script>
+</head>
+<body>
+<div id="container"></div>
+<noscript>
+Please turn on JavaScript to use Valloc.com
+</noscript>
+</body>
+</html>

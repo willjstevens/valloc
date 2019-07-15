@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<title>validate-page.html</title>
+	<script src="/r/j/jquery-1.8.3.js" type="text/javascript"></script>
+	<script src="/r/j/vlc.js" type="text/javascript"></script>
+	<script src="/r/j/vlc-library.js" type="text/javascript"></script>
+	
+<script type="text/javascript">
+	$(document).ready(function() {
+		if (!com.valloc.isValidBrowser) {
+			document.write('Invalid browser.');
+			return;
+		}
+		
+		
+		var addToBody = function(data) {
+			$('#container').append(data + '<br />');
+		}
+		var isSynchronous = false;
+		
+		var ajaxTextGetBomb = new com.valloc.library.Ajax.newTextGet('/test/ajax/echo/text/bomb');
+		ajaxTextGetBomb.addParam('message', "Ka-bloowee!");
+		ajaxTextGetBomb.setDoneCallback(addToBody);
+		if (isSynchronous) {
+			ajaxTextGetBomb.synchronous();
+		} 
+		ajaxTextGetBomb.send();
+		
+		var ajaxTextGet = new com.valloc.library.Ajax.newTextGet('/test/ajax/echo/text');
+		ajaxTextGet.addParam('message', "String echo of GET.");
+		ajaxTextGet.setDoneCallback(addToBody);
+		if (isSynchronous) {
+			ajaxTextGet.synchronous();
+		} 
+		ajaxTextGet.send();
+
+		var ajaxHtmlGet = new com.valloc.library.Ajax.newHtmlGet('/test/ajax/echo/html');
+		ajaxHtmlGet.addParam('html', "<i><b>HTML</b> echo to GET.</i>");
+		ajaxHtmlGet.setDoneCallback(addToBody);
+		if (isSynchronous) {
+			ajaxHtmlGet.synchronous();
+		} 
+		ajaxHtmlGet.send();
+		
+		var ajaxFormPost = new com.valloc.library.Ajax.newFormPost('/test/ajax/echo/text');
+		ajaxFormPost.addParam('message', "String echo of POST in Form.");
+		ajaxFormPost.setDoneCallback(addToBody);
+		if (isSynchronous) {
+			ajaxFormPost.synchronous();
+		} 
+		ajaxFormPost.send();
+		
+		var ajaxJsonGet = new com.valloc.library.Ajax.newJsonGet('/test/ajax/echo/json');
+		ajaxJsonGet.addParam('message', "JSON GET echo.");
+		ajaxJsonGet.setDoneCallback(function (responseObj) {
+			addToBody('Echo message = "' + responseObj.message + '" and UUID Data = "' + responseObj.data);
+		});
+		if (isSynchronous) {
+			ajaxJsonGet.synchronous();
+		} 
+		ajaxJsonGet.send();
+		
+		var ajaxJsonPost = new com.valloc.library.Ajax.newJsonPost('/test/ajax/echo/json');
+		ajaxJsonPost.addParam('message', "JSON POST echo.");
+		ajaxJsonPost.setDoneCallback(function (responseObj) {
+			addToBody('Echo message = "' + responseObj.message + '" and UUID Data = "' + responseObj.data);
+		});
+		if (isSynchronous) {
+			ajaxJsonPost.synchronous();
+		} 
+		ajaxJsonPost.send();
+		
+		var ajaxJsonPostAndJsonResponse = new com.valloc.library.Ajax.newJsonPostAndJsonResponse('/test/ajax/echo/postjson');
+		var jsonObj = {
+			'message': 'JSON POST and JSON echo.',
+			'intData': 50,
+			'booleanData': true
+		}
+		ajaxJsonPostAndJsonResponse.setJsonRequestObject(jsonObj);
+		ajaxJsonPostAndJsonResponse.setDoneCallback(function (responseObj) {
+			addToBody('Echo message = "' + responseObj.message + '" and data = "' + responseObj.data);
+		});
+		if (isSynchronous) {
+			ajaxJsonPostAndJsonResponse.synchronous();
+		} 
+		ajaxJsonPostAndJsonResponse.send();
+	});
+</script>
+</head>
+<body>
+<div id="container"></div>
+<noscript>
+Please turn on JavaScript to use Valloc.com
+</noscript>
+</body>
+</html>
